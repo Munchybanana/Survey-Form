@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="Style.css"/>
+<header>
+<h1 id="title"> Steam Games Survey Form </h1>
+</header>
+ 
+<body> 
+<p id="description"> Please fill out this survey, so Steam can know what games you like best! </p>
+   
+   
+<div class="input-headings">
+     
+<form id="survey-form">
+  <label for="name" id="name-label"> Name </label>
+  <input id="name" type="text" name="name" placeholder="John Doe" class="form-inputs" required> </input>
+  <br>
+  <label for="email" id="email-label"> Email </label>
+  <input id="email" type="email" name="email" placeholder="johndoe@gmail.com" class="form-inputs" required> </input>
+  <br>
+<label for="number" id="number-label"> Age </label>
+  <input id="number" type="number" name="number" placeholder="25" min="18" max="100" class="form-inputs" required> </input>
+<br>
+  
+<label for="dropdown"> What is your favorite game this year?</label>
+<select id="dropdown" class="form-inputs">
+  <option disabled selected value> Select an option </option>
+  <option value="Total War Warhammer 3"> Total War Warhammer 3 </option>
+  <option value="Elden Ring"> Elden Ring </option>
+  <option value="Dying Light 2 Stay Human"> Dying Light 2 Stay Human </option>
+  <option value="Ready or Not"> Ready or Not </option>
+  </select>
+  
+  <br>
+  <br>
+  
+  <label for="game-genre" id="game-genre"> <b> Favorite Game Genre: </b> </label>
+<br>
+  <input for="game-genre" type="radio" id="action" name="genre"       value="action"> 
+  <label for="game-genre"> Action </label>
+<br>
+  <input for="game-genre" type="radio" id="rpg" name="genre" value="rpg">
+  <label for="game-genre"> RPG </label>
+<br>
+  <input for="game-genre" type="radio" id="strategy" name="genre" value="strategy">
+  <label for="game-genre"> Strategy </label>
+
+<br>
+<br>
+  
+<label for="favorite-sales"> <b> Favorite Steam Sales: </b> </label>
+<br>
+<input id="checkbox" type="checkbox" name="favorite-sales" value="lunar-new-year-sale">
+<label for="checkbox"> Lunar New Year Sale </label>
+<br>
+<input id="checkbox" type="checkbox" name="favorite-sales" value="spring-sale">
+<label for="checkbox"> Spring Sale </label>
+<br>
+<input id="checkbox" type="checkbox" name="favorite-sales" value="summer-sale">
+<label for="checkbox"> Summer Sale </label>
+<br>
+<input id="checkbox" type="checkbox" name="favorite-sales" value="halloween-sale">
+<label for="checkbox"> Halloween Sale </label>
+<br>
+<input id="checkbox" type="checkbox" name="favorite-sales" value="winter-sale">
+<label for="checkbox"> Winter Sale </label>
+  
+<br>
+<br>
+  
+<label id="textarea"> Additional Comments </label>
+<br>
+<textarea id="textarea" name="instructions" rows="5" cols="40">
+
+</textarea>
+<br>
+
+<input id="submit" type="submit" value="submit" class="submit-button">
+  
+</form>
+</div>
+</body>
+</html>
